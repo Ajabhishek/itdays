@@ -1,0 +1,18 @@
+#transitionobj{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	border: 2px #000 solid;
+	background-color: #eee;
+	background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), 
+	linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+	background-size:20px 20px;
+	background-position:0 0, 30px 30px;
+	opacity: 1;
+	position: absolute;
+	left: 200px;
+	top: 400px;
+	-webkit-transition-property: left, top;
+	-webkit-transition-duration: 500ms;
+	-webkit-transition-timing-function:ease-in;
+}

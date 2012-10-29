@@ -1,0 +1,9 @@
+#smurf_frame{
+	width: 128px;
+	height: 128px;
+	opacity: 0;
+	background-color:#fff;
+	position: absolute;
+	-webkit-transition: 500ms ease-in all;
+}
+

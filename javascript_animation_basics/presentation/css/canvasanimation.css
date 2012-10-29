@@ -1,0 +1,11 @@
+/* CSS Document */
+
+#canvasAnimation{
+	width: 400px;
+	height: 200px;
+	border: 2px #ccc solid;
+}
+
+.selected{
+	background-color:#ccc;
+}

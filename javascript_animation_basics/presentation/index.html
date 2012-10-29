@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>CSSS: A brief introduction</title>
+	
+	<link href="slideshow.css" rel="stylesheet" />
+	<link href="theme.css" rel="stylesheet" />
+	<link href="talk.css" rel="stylesheet" />
+	<link href="css/front.css" rel="stylesheet" />
+	<link href="css/spritesheet.css" rel="stylesheet" />
+	<link href="css/sprites.css" rel="stylesheet" />
+	<link href="css/transitions.css" rel="stylesheet" />
+	<link href="css/canvasanimation.css" rel="stylesheet" />
+	<script src="prefixfree.min.js"></script>
+</head>
+<body onLoad="initSpriteSheet()">
+
+<section>
+	<header class="slide">
+		<h1>JavaScript Animation Basics</h1>
+        <div id="front-animation"></div>
+	</header>
+	
+	<section class="slide" title="CSSS: Introduction">
+		<h2>JavaScript?</h2>
+		<p>Anything else than Java</p>
+		<ul>
+			<li class="delayed">Runs in the browser</li>
+			<li class="delayed">Scripting as in "No compiling needed"</li>
+			<li class="delayed">JavaScript brings interactivity to HTML</li>
+			<li class="delayed">JavaScript + CSS3 = Mmmmmme like :-)</li>
+		</ul>
+	</section>
+	
+	<section class="slide">
+		<h2>JavaScript history</h2>
+		<ul>
+			<li class="delayed">Been around since 1995</li>
+			<li class="delayed">Regarded as a "not-seriuos" language until recent years</li>
+			<li class="delayed">JavaScript libraries increased the hype</li>
+			<li class="delayed">New browser standards did the job</li>
+			<li class="delayed">and here it is! ;-)</li>
+		</ul>
+	</section>
+	
+	<section class="slide" id="navigation">
+		<h2>Disclaimer</h2>
+		<p>Only modern browsers are supported today</p>
+		<ul>
+			<li>Internet Explorer is not always considered a modern browser</li>
+			<li>Chrome, Firefox, Safari and Opera are supported</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<header class="slide">
+		<h1>Animation</h1>
+	</header>
+	
+	<section class="slide">
+		<h2>What is animation?</h2>
+        <ul>
+            <li class="delayed">Animation is the rapid display of a sequence of images to create an illusion of movement. (WikiPedia)</li>
+        	<li class="delayed">Animation is about change (visual, audio)</li>
+        	<li class="delayed">Cartoons, 3D, etc.</li>
+        </ul>
+	</section>
+
+	<section class="slide">
+		<h2>Today's animations</h2>
+        <ul>
+            <li class="delayed">Document Object Model (DOM) animation</li>
+        	<li class="delayed">Animation with CSS3 Transitions</li>
+        	<li class="delayed">Use a PNG Sprite Sheet to make animation</li>
+        	<li class="delayed">Particle animation using &lt;canvas&gt;</li>
+        </ul>
+	</section>
+	
+</section>
+
+<section>
+	<header class="slide">
+		<h1>DOM animation</h1>
+	</header>
+	
+	<section class="slide">
+		<h2>DOM</h2>
+		<div>
+			<img src="img/htmltree.gif" width="900" />
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>DOM</h2>
+		<pre>Document Object Model</pre>
+		<div>
+        <a class="jsbin-embed" href="http://jsbin.com/ugumep/1/embed?live">DOM Animation</a>
+		</div>
+	</section>
+	
+	
+</section>
+
+<section>
+	<header class="slide">
+		<h1>CSS3 Transitions</h1>
+	</header>
+	
+	<section class="slide">
+		<h2>CSS3 Transitions makes it easy to animate stuff</h2>
+        <ul>
+        	<li class="delayed">Supported by modern browsers (Firefox, Safari, Chrome, Opera, IE 10+)</li>
+        </ul>
+        <div id="transitionobj"></div>
+	</section>
+	
+	<section class="slide">
+		<h2>The bug example</h2>
+		<pre>CSS3 Transition</pre>
+		<div>
+        <a class="jsbin-embed" href="http://jsbin.com/enosoq/5/embed?live">CSS3 Transition</a>
+		</div>
+	</section>
+	
+</section>
+
+
+<section>
+	<header class="slide">
+		<h1>Animated Sprite Sheet</h1>
+	</header>
+	
+	<section class="slide">
+		<h2>Sprite Sheet</h2>
+        <img src="img/bird.png" />
+	</section>
+
+	<section class="slide">
+		<h2>Sprite Sheet</h2>
+        <img src="img/jellyfish.png" height="500" />
+	</section>
+
+	<section class="slide">
+		<h2>Sprite Sheet</h2>
+        <img src="img/smurf_sprite.png" id="smurf_spritesheet" />
+        <div id="smurf_frame">&nbsp;</div>
+	</section>
+	
+	<section class="slide">
+		<h2>Animated smurf</h2>
+        <div id="smurf"></div>
+	</section>
+	
+	
+</section>
+
+<section>
+	<header class="slide">
+		<h1>Canvas</h1>
+	</header>
+	
+	<section class="slide">
+		<h2>HTML5 &lt;canvas&gt;</h2>
+        <ul>
+        	<li class="delayed">Supported by modern browsers (Firefox, Safari, Chrome, Opera, IE 9+)</li>
+        </ul>
+        <canvas id="canvasAnimation"></canvas>
+        <div>
+        	<button id="rewindCanvas">Rewind canvas</button>
+        	<button id="resetCanvas">Reset canvas</button>
+        	<button id="animateCanvas">Animate</button>
+        	<button id="drawCanvas">Draw</button>
+        </div>
+        <h3 id="canvasMsg">Now the canvas is drawing</h3>
+	</section>
+	
+	<section class="slide">
+		<h2>Particles</h2>
+		<pre>inspired by Seb Lee-Delisle</pre>
+		<div>
+        <a class="jsbin-embed" href="http://jsbin.com/ituram/4/embed?live">Particles</a>
+		</div>
+	</section>
+	
+</section>
+
+
+
+
+<section>
+	<header class="slide">
+		<h1>Inspiration<br/>Where to go next</h1>
+	</header>
+	
+	<section class="slide">
+		<h2>JavaScript Animations</h2>
+		<ul>
+        	<li class="delayed"><a target="_blank" href="http://seb.ly">Seb Lee-Delisle</a></li>
+        	<li class="delayed"><a target="_blank" href="http://vimeo.com/36278748">Watch Seb's particle animation video</a></li>
+        	<li class="delayed"><a target="_blank" href="https://github.com/sebleedelisle">Get sample code and tutorials from Seb's Github</a></li>
+            <li class="delayed"><a href="http://javascript.info/tutorial/animation" target="_blank">JavaScript.info - (advanced) tutorial</a></li>
+        </ul>
+
+		<h2>CSS3</h2>
+		<ul>
+        	<li class="delayed"><a href="http://lea.verou.me" target="_blank">Lea Verou</a></li>
+        	<li class="delayed"><a href="http://vimeo.com/31719130" target="_blank">Watch Lea Verou @ Fronteers 2011</a></li>
+        </ul>
+	</section>
+
+</section>
+
+<section>
+	<header class="slide">
+		<h1>And some Punk Rock</h1>
+	</header>
+	
+	<section class="slide">
+		<h2>JavaScript is <br/>the new<br/>Punk Rock</h2>
+		<ul>
+        	<li class="delayed"><a target="_blank" href="http://stuartmemo.com/javascript-is-the-new-punk-rock/">Stuart Memo experimenting with HTML5 Audio on &lt;canvas&gt;</a></li>
+        </ul>
+    </section>
+    <section class="slide">
+
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/PN8Eg1K9xjE#t=3m16s" frameborder="0" allowfullscreen></iframe>        
+
+	</section>
+
+</section>
+
+<footer class="slide" title="The End">
+	<h2>Thank you!</h2>
+
+    <p>You can contact me: <a href="mailto:niha@eaaa.dk">niha@eaaa.dk</a></p>
+    <p>You can get this presentation: <a href="http://eaaa.github.com/itdays/">eaaa.github.com/itdays</a></p>
+	<br/>
+	<p>Credits:</p> 
+	<ul>
+		<li>This presentation is based on Lea Verou's CSS and JavaScript slideshow framework CSSS: <a href="http://github.com/LeaVerou/CSSS">github.com/LeaVerou/CSSS</a></li>
+		<li><a href="http://lukeroberts.us/2008/12/wallpaper-colourful-wood/">Colored wood background by Luke Roberts</a></li>
+
+	</ul>
+</footer>
+
+<script src="slideshow.js"></script>
+<script src="plugins/css-edit.js"></script>
+<script src="plugins/css-snippets.js"></script>
+<script src="plugins/css-controls.js"></script>
+<script src="plugins/code-highlight.js"></script>
+<script src="http://static.jsbin.com/js/embed.js"></script>
+<script src="js/front.js"></script>
+<script src="js/spritesheet.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/transitions.js"></script>
+<script src="js/canvasanimation.js"></script>
+<script>
+var slideshow = new SlideShow();
+
+var snippets = document.querySelectorAll('.snippet');
+for(var i=0; i<snippets.length; i++) {
+	new CSSSnippet(snippets[i]);
+}
+
+var cssControls = document.querySelectorAll('.css-control');
+for(var i=0; i<cssControls.length; i++) {
+	new CSSControl(cssControls[i]);
+}
+</script>
+	
+</body>
+</html>
