@@ -1,0 +1,16 @@
+.container{
+	width: 300px;
+	height: 200px;
+	font-size: 60px;
+	font-family:Helvetica, Arial, sans-serif;
+	cursor:pointer;
+	float: left;	
+}
+
+#jq-container{
+	background-color: #f60;
+}
+
+#js-container{
+	background-color: #06f;
+}

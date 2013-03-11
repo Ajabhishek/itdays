@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+<title>Asynchronous communication</title>
+</head>
+
+<body>
+     <div class="container">
+     	<h1>Send AJAX email</h1>
+        
+        <form class="form-horizontal" id="form_mail">
+          <div class="control-group">
+            <label class="control-label" for="from_name">Name</label>
+            <div class="controls">
+              <input type="text" name="from_name" id="from_name" placeholder="Name" />
+            </div>
+          </div>
+          
+          <div class="control-group">
+            <label class="control-label" for="from_email">Email</label>
+            <div class="controls">
+              <input type="email" name="from_email" id="from_email" placeholder="Email" />
+            </div>
+          </div>
+          
+          <div class="control-group">
+            <label class="control-label" for="subject">Subject</label>
+            <div class="controls">
+              <input type="text" id="subject" name="subject" placeholder="Subject" />
+            </div>
+          </div>
+          
+          <div class="control-group">
+            <label class="control-label" for="subject">Message</label>
+            <div class="controls">
+              <textarea name="message" class="span3"></textarea>
+            </div>
+          </div>
+          
+          <div class="control-group">
+            <div class="controls">
+              <button type="submit" id="button_send" class="btn">Send email</button>
+            </div>
+          </div>
+          
+        </form>    
+    </div>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+<title>Asynchronous communication</title>
+</head>
+
+<body>
+	<div class="container">
+    	<h1>Asynchronous communication</h1>
+        <form class="form-search" id="form_search" action="receiveform.php" method="post">
+        	<input type="text" class="input-medium search-query" name="search">
+        	<button type="submit" id="button_search" class="btn">Search</button>
+            
+        </form>    
+        <div class="alert hide" id="msg"></div>
+    </div>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
